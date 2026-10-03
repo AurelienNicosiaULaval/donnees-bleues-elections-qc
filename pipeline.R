@@ -14,8 +14,18 @@ source('R/transform.R'); source('R/legacy2012.R'); source('R/supplemental.R'); s
 if (mode != 'all') {
  # Garder les captures publiques antérieures dans les mises à jour ciblées.
  tc <- read_meta('metadata/table_catalog.csv')
+ derived_tables <- c('historical_candidate_results','historical_district_results','historical_party_results','historical_turnout','turnout_history','by_elections','district_indicators','polling_candidate_links','district_map_changes_spatial','results_candidate_2026','results_party_2026')
+ available <- load_manifest(); available <- available$snapshot_id[file.exists(available$raw_file)]
  for (i in seq_len(nrow(tc))) if (tc$visibility[i] == 'public' && file.exists(tc$path[i])) {
-  x <- read_meta(tc$path[i])
+  if(tc$table[i] %in% derived_tables)next
+  # Préserver les textes sources; les espaces finaux ne créent pas une seconde
+  # observation après lecture d’un CSV. Les captures relues depuis leurs octets
+  # remplacent seulement leur copie publiée, sans dédoublonnage arbitraire de clé.
+  x <- read_csv(tc$path[i],col_types=cols(.default=col_character()),na='NA',trim_ws=FALSE,show_col_types=FALSE)
+  keep <- !x$snapshot_id %in% available
+  if(tc$table[i]=='elections')keep <- keep | x$data_status=='pre_election'
+  x <- x[keep,]
+  if(tc$table[i] %in% c('elections','results_party'))x <- filter(x,election_id!='qc-prov-2012-09-04-general')
   dd <- read_meta('metadata/data_dictionary.csv') |> filter(table == tc$table[i])
   for (v in intersect(names(x), dd$variable)) {
    ty <- dd$type[match(v, dd$variable)]

@@ -5,7 +5,7 @@ read_electoral_table <- function(name, latest = TRUE, directory = '.') {
  dictionary <- read_csv(file.path(directory,'metadata/data_dictionary.csv'),show_col_types=FALSE)
  row <- filter(catalog,table==name)
  if(nrow(row)!=1L||!file.exists(file.path(directory,row$path)))stop('Table absente ou réservée à une reconstruction locale : ',name)
- x <- read_csv(file.path(directory,row$path),col_types=cols(.default=col_character()),na=c('NA',''),show_col_types=FALSE)
+ x <- read_csv(file.path(directory,row$path),col_types=cols(.default=col_character()),na='NA',trim_ws=FALSE,show_col_types=FALSE)
  d <- filter(dictionary,table==name)
  for(v in intersect(names(x),d$variable)) {
   type<-d$type[match(v,d$variable)]
