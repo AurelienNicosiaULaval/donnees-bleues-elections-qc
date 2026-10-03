@@ -61,7 +61,7 @@ transform_contributions <- function(s, m) {
 transform_supplemental <- function() {
  s <- load_catalog(); m <- latest_manifest()
  for (i in seq_len(nrow(m))) {
-  r <- s |> filter(source_id == m$source_id[i]); if (!nrow(r)) next
+  r <- s |> filter(source_id == m$source_id[i]); if (!nrow(r) || !file.exists(m$raw_file[i])) next
   tryCatch({
    if (r$format == 'XLS' && r$group == 'map') transform_demographics(r, m[i, ])
    else if (r$group == 'contributions') transform_contributions(r, m[i, ])
