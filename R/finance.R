@@ -9,7 +9,9 @@ transform_financial_indexes <- function() {
  for(g in c('limits','allocations','map_history','district_history','district_profiles')) {
   rows<-inner_join(filter(s,group==g),m,by='source_id',suffix=c('','_capture'))
   for(i in seq_len(nrow(rows))) {
-   r<-rows[i,];doc<-read_html(r$raw_file);scope<-html_elements(doc,'#tabProv');if(!length(scope))scope<-doc
+   r<-rows[i,]
+   if(!file.exists(r$raw_file))next
+   doc<-read_html(r$raw_file);scope<-html_elements(doc,'#tabProv');if(!length(scope))scope<-doc
    tabs<-html_elements(scope,'table') |> html_table(convert=FALSE)
    if(g=='allocations' && length(tabs) && ncol(tabs[[1]])>=2 && nrow(tabs[[1]])) {
     headings <- html_elements(doc,'h2') |> html_text2()
