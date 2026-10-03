@@ -1,0 +1,9 @@
+Package: electionsqcdata
+Title: Données électorales provinciales québécoises
+Version: 0.1.0
+Authors@R: person("Aurélien", "Nicosia", role = c("aut", "cre"))
+Description: Acquisition, historisation et validation de données électorales officielles.
+License: MIT + file LICENSE-CODE
+Encoding: UTF-8
+Imports: readr, dplyr, tidyr, purrr, jsonlite, httr2, xml2, rvest, digest, sf, readxl, stringr, lubridate, ggplot2, renv
+Suggests: testthat

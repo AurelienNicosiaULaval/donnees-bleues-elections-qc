@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Citez ce dépôt et les producteurs officiels des données utilisées."
+title: "Données bleues : élections provinciales québécoises"
+type: software
+authors:
+  - family-names: Nicosia
+    given-names: Aurélien
+version: 0.1.0
+date-released: 2026-10-03
+url: "https://github.com/AurelienNicosiaULaval/donnees-bleues-elections-qc"
+license: MIT

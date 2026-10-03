@@ -1,0 +1,81 @@
+name: Acquisition et historisation
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Mode de récupération
+        type: choice
+        options: [daily, results, weekly]
+        default: daily
+  schedule:
+    - cron: '17 8 * * *'
+    - cron: '*/15 0-6 6 10 *'
+    - cron: '37 8 * * 1'
+permissions:
+  contents: write
+concurrency:
+  group: acquisition-electorale
+  cancel-in-progress: false
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      mode: ${{ steps.mode.outputs.mode }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: mode
+        env:
+          EVENT: ${{ github.event_name }}
+          SCHEDULE: ${{ github.event.schedule }}
+          INPUT: ${{ inputs.mode }}
+        run: |
+          mode='skip'
+          today=$(date -u +%F)
+          if [ "$EVENT" = 'workflow_dispatch' ]; then
+            mode="$INPUT"
+          elif [ "$SCHEDULE" = '*/15 0-6 6 10 *' ] && [ "$today" = '2026-10-06' ]; then
+            mode='results'
+          elif [ "$SCHEDULE" = '17 8 * * *' ] && [ "$today" \< '2026-10-13' ]; then
+            mode='daily'
+          elif [ "$SCHEDULE" = '37 8 * * 1' ] && [ "$today" \> '2026-10-12' ]; then
+            mode='weekly'
+          fi
+          if [ "$EVENT" != 'workflow_dispatch' ] && [ "$mode" = 'results' ]; then
+            if python3 scripts/download/results_final.py; then mode='skip'; fi
+          fi
+          echo "mode=$mode" >> "$GITHUB_OUTPUT"
+  acquire:
+    needs: plan
+    if: needs.plan.outputs.mode != 'skip'
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.5.0'
+          use-public-rspm: true
+      - name: Installer les bibliothèques système des lecteurs
+        run: sudo apt-get update && sudo apt-get install -y libudunits2-dev libgdal-dev libgeos-dev libproj-dev libcurl4-openssl-dev libssl-dev libxml2-dev poppler-utils tesseract-ocr tesseract-ocr-fra
+      - uses: r-lib/actions/setup-renv@v2
+      - name: Récupérer les sources et valider
+        env:
+          MODE: ${{ needs.plan.outputs.mode }}
+        run: |
+          if [ "$MODE" = 'weekly' ]; then
+            Rscript scripts/discover/discover.R
+            Rscript pipeline.R --weekly --refresh
+          else
+            Rscript pipeline.R --"$MODE" --refresh
+          fi
+          make test
+      - name: Versionner uniquement les données autorisées
+        run: |
+          git config user.name 'Données bleues maintenance'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add README.md metadata data/processed data/snapshots
+          Rscript scripts/validate/publication.R
+          if ! git diff --cached --quiet; then
+            git commit -m 'Actualiser les captures officielles et métadonnées'
+            git push
+          fi
