@@ -1,9 +1,9 @@
 source_id,identified,retrieved,latest_retrieved_at,latest_attempt_outcome,normalized_tables,public_tables,publication_policy,interpretation_status
 src_0ce97686fd47,TRUE,FALSE,NA,not_attempted,,,public,not_normalized
-src_fd3351236900,TRUE,TRUE,2026-10-05T17:11:52.073Z,success,registered_electors,registered_electors,public,see_table_status_and_dictionary
+src_fd3351236900,TRUE,TRUE,2026-10-06T15:16:22.123Z,success,registered_electors,registered_electors,public,see_table_status_and_dictionary
 src_ec3de0c7b369,TRUE,TRUE,2026-10-03T14:01:15.418Z,success,,,public,not_normalized
-src_22fefd6fc574,TRUE,TRUE,2026-10-05T17:11:52.984Z,success,candidates;elections,candidates;elections,public,see_table_status_and_dictionary
-src_3bbf709ff718,TRUE,TRUE,2026-10-06T15:12:38.413Z,success,district_indicators;elections;result_source_fields;results_candidate;results_candidate_2026;results_party;results_party_2026;turnout,district_indicators;elections;result_source_fields;results_candidate;results_candidate_2026;results_party;results_party_2026;turnout,public,see_table_status_and_dictionary
+src_22fefd6fc574,TRUE,TRUE,2026-10-06T15:16:23.042Z,success,candidates;elections,candidates;elections,public,see_table_status_and_dictionary
+src_3bbf709ff718,TRUE,TRUE,2026-10-06T15:16:23.953Z,success,district_indicators;elections;result_source_fields;results_candidate;results_candidate_2026;results_party;results_party_2026;turnout,district_indicators;elections;result_source_fields;results_candidate;results_candidate_2026;results_party;results_party_2026;turnout,public,see_table_status_and_dictionary
 src_4b65f66b8f83,TRUE,FALSE,NA,not_attempted,,,public,not_normalized
 src_efecad5c5373,TRUE,FALSE,NA,not_attempted,,,public,not_normalized
 src_fd975590ed7c,TRUE,FALSE,NA,not_attempted,,,public,not_normalized
@@ -15,7 +15,7 @@ src_53f384df61ef,TRUE,TRUE,2026-10-03T14:02:39.467Z,success,,,public,not_normali
 src_4a2457749372,TRUE,TRUE,2026-10-03T14:02:46.376Z,success,district_crosswalk_2017_2026;district_map_changes_spatial;electoral_district_geometries,district_crosswalk_2017_2026;district_map_changes_spatial;electoral_district_geometries,public,see_table_status_and_dictionary
 src_33b873a220a5,TRUE,FALSE,NA,not_attempted,,,public,not_normalized
 src_e15bb161b6e0,TRUE,FALSE,NA,not_attempted,,,public,not_normalized
-src_0adf08e78b00,TRUE,TRUE,2026-10-05T17:11:54.661Z,success,parties;party_authorization_history;party_officials,parties;party_authorization_history;party_officials,public,see_table_status_and_dictionary
+src_0adf08e78b00,TRUE,TRUE,2026-10-06T15:16:24.842Z,success,parties;party_authorization_history;party_officials,parties;party_authorization_history;party_officials,public,see_table_status_and_dictionary
 src_d8627eb5b5ab,TRUE,FALSE,NA,not_attempted,,,public,not_normalized
 src_0d9340fc9b7a,TRUE,FALSE,NA,not_attempted,,,public,not_normalized
 src_67d4a1289223,TRUE,FALSE,NA,not_attempted,,,public,not_normalized
@@ -244,8 +244,8 @@ src_3c60c14c17fb,TRUE,FALSE,NA,not_attempted,,,local_only,not_normalized
 src_caef94c1269b,TRUE,FALSE,NA,not_attempted,,,local_only,not_normalized
 src_50d5d6e8cccd,TRUE,FALSE,NA,not_attempted,,,local_only,not_normalized
 src_302170bfda91,TRUE,FALSE,NA,not_attempted,,,local_only,not_normalized
-src_5e4b0ff5dd36,TRUE,TRUE,2026-10-05T17:11:55.649Z,success,,,local_only,not_normalized
-src_fd99c43283f3,TRUE,TRUE,2026-10-05T17:11:56.606Z,success,turnout_preliminary_2026,,local_only,see_table_status_and_dictionary
+src_5e4b0ff5dd36,TRUE,TRUE,2026-10-06T15:16:25.814Z,success,,,local_only,not_normalized
+src_fd99c43283f3,TRUE,TRUE,2026-10-06T15:16:26.716Z,success,turnout_preliminary_2026,,local_only,see_table_status_and_dictionary
 src_c4d0e6a0340b,TRUE,TRUE,2026-10-03T14:04:36.949Z,success,,,local_only,not_normalized
 src_b0ef08f0bdfb,TRUE,TRUE,2026-10-03T14:04:40.430Z,success,financial_document_index;financial_source_cells,,local_only,see_table_status_and_dictionary
 src_e4c70ec5dd92,TRUE,TRUE,2026-10-03T14:04:44.380Z,success,financial_document_index;financial_source_cells,,local_only,see_table_status_and_dictionary
@@ -461,7 +461,7 @@ src_bc27f2afd192,TRUE,TRUE,2026-10-03T14:13:44.095Z,success,financial_document_i
 src_e0df11670b07,TRUE,TRUE,2026-10-03T14:13:46.968Z,success,financial_document_index,,local_only,see_table_status_and_dictionary
 src_a1b8ce3f9327,TRUE,TRUE,2026-10-03T14:13:48.419Z,success,financial_document_index,,local_only,see_table_status_and_dictionary
 src_599c155a843f,TRUE,TRUE,2026-10-03T14:13:49.845Z,success,financial_document_index;financial_source_cells,,local_only,see_table_status_and_dictionary
-src_054c00a7b03c,TRUE,TRUE,2026-10-05T17:11:57.483Z,success,candidate_statistics,,local_only,see_table_status_and_dictionary
+src_054c00a7b03c,TRUE,TRUE,2026-10-06T15:16:27.697Z,success,candidate_statistics,,local_only,see_table_status_and_dictionary
 src_6c3e3712dabd,TRUE,TRUE,2026-10-03T14:13:52.924Z,success,turnout_history_source,,local_only,see_table_status_and_dictionary
 src_d61e09ea1753,TRUE,TRUE,2026-10-03T14:13:54.072Z,success,,,local_only,not_normalized
 src_89b1dcb3bd18,TRUE,TRUE,2026-10-03T14:13:55.324Z,success,,,local_only,not_normalized
