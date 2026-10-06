@@ -3,7 +3,7 @@ src_0ce97686fd47,TRUE,FALSE,NA,not_attempted,,,public,not_normalized
 src_fd3351236900,TRUE,TRUE,2026-10-05T17:11:52.073Z,success,registered_electors,registered_electors,public,see_table_status_and_dictionary
 src_ec3de0c7b369,TRUE,TRUE,2026-10-03T14:01:15.418Z,success,,,public,not_normalized
 src_22fefd6fc574,TRUE,TRUE,2026-10-05T17:11:52.984Z,success,candidates;elections,candidates;elections,public,see_table_status_and_dictionary
-src_3bbf709ff718,TRUE,FALSE,NA,unavailable,,,public,not_normalized
+src_3bbf709ff718,TRUE,TRUE,2026-10-06T06:01:45.273Z,success,district_indicators;elections;result_source_fields;results_candidate;results_candidate_2026;results_party;results_party_2026;turnout,district_indicators;elections;result_source_fields;results_candidate;results_candidate_2026;results_party;results_party_2026;turnout,public,see_table_status_and_dictionary
 src_4b65f66b8f83,TRUE,FALSE,NA,not_attempted,,,public,not_normalized
 src_efecad5c5373,TRUE,FALSE,NA,not_attempted,,,public,not_normalized
 src_fd975590ed7c,TRUE,FALSE,NA,not_attempted,,,public,not_normalized
