@@ -16,6 +16,11 @@ if (mode != 'all') {
  tc <- read_meta('metadata/table_catalog.csv')
  derived_tables <- c('historical_candidate_results','historical_district_results','historical_party_results','historical_turnout','turnout_history','by_elections','district_indicators','polling_candidate_links','district_map_changes_spatial','results_candidate_2026','results_party_2026')
  available <- load_manifest(); available <- available$snapshot_id[file.exists(available$raw_file)]
+ # Les captures publiques seront rejouées par transform_all(), même quand
+ # leur copie sous data/raw est absente dans un clone. Ne pas garder aussi
+ # leurs anciennes lignes préparées, ce qui doublerait les mêmes clés.
+ results_index <- read_meta('data/snapshots/results_2026/index.csv')
+ if(nrow(results_index)) available <- union(available,results_index$snapshot_id[file.exists(results_index$raw_file)])
  for (i in seq_len(nrow(tc))) if (tc$visibility[i] == 'public' && file.exists(tc$path[i])) {
   if(tc$table[i] %in% derived_tables)next
   # Préserver les textes sources; les espaces finaux ne créent pas une seconde

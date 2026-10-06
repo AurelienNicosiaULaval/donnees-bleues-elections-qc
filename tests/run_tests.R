@@ -4,6 +4,8 @@ test_that('les identifiants séparent carte, candidature et événement', {
  expect_false(district_key('1','2017','2022') == district_key('1','2026','2026'))
  expect_false(candidate_key('qc-prov-2022-10-03-general','d','1') == candidate_key('qc-prov-2026-10-05-general','d','1'))
  expect_match(source_time('2022-10-06T11:55:41,244-04:00'), '^2022-10-06T15:55:41[.]')
+ expect_identical(source_time('2026-10-06T09:10:08,959-04:00'),'2026-10-06T13:10:08.959Z')
+ expect_identical(source_time('2026-10-06T09:55:38,958-04:00'),'2026-10-06T13:55:38.958Z')
 })
 test_that('un dépouillement complet ne suffit pas à établir la finalité', {
  j <- list(statistiques = list(isResultatsFinaux=FALSE, nbElecteurInscrit=100, nbVoteValide=90, nbVoteRejete=2, nbVoteExerce=92, nbBureauVote=1, nbBureauVoteRempli=1, nbCirconscription=1, tauxParticipationTotal=99),
@@ -20,6 +22,32 @@ test_that('un dépouillement complet ne suffit pas à établir la finalité', {
  flush_large_tables()
  expect_true(any(get('result_source_fields',TABLES)$source_field=='tauxParticipationTotal'))
  unlink(p)
+})
+test_that('les consultations espacées récupèrent aussi les corrections après finalité', {
+ final <- tempfile(fileext='.json')
+ write_json(list(statistiques=list(isResultatsFinaux=TRUE)), final, auto_unbox=TRUE)
+ on.exit(unlink(final), add=TRUE)
+ # Isoler le réseau et le délai, tout en exécutant la sélection de production.
+ acquisition <- new.env(parent=globalenv())
+ acquisition$source <- function(...) invisible(NULL)
+ sys.source('scripts/download/acquire.R', envir=acquisition)
+ source_results <- load_catalog() |>
+  filter(group=='current', grepl('/resultats/resultats.json$',url), download_default=='true')
+ expect_equal(nrow(source_results),1L)
+ acquisition$load_catalog <- function() source_results
+ acquisition$load_manifest <- function() tibble(source_id=character())
+ acquisition$read_meta <- function(...) tibble(observed_at='2026-10-06T13:24:31Z',raw_file=final)
+ acquisition$Sys.sleep <- function(...) invisible(NULL)
+ collected <- character()
+ acquisition$acquire <- function(s,refresh) {
+  expect_true(refresh)
+  collected <<- c(collected,s$source_id)
+ }
+ for(mode in c('daily','weekly','results')) {
+  collected <- character()
+  acquisition$acquire_all(refresh=TRUE,mode=mode)
+  expect_identical(collected,source_results$source_id)
+ }
 })
 test_that('les octets et captures restent immuables', {
  m <- load_manifest()

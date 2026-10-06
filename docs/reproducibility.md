@@ -40,7 +40,7 @@ Le workflow d’acquisition est quotidien avant le scrutin et pendant la semaine
 
 Après cette période, la mise à jour est hebdomadaire. Une exécution manuelle permet de sélectionner le mode. Le statut final doit toujours venir du producteur. Une capture à 100 % de bureaux renseignés peut rester préliminaire.
 
-Les captures fréquentes planifiées s’arrêtent dès que la dernière capture annonce explicitement la finalité. Les modes quotidien et hebdomadaire cessent alors de récupérer le flux de dépouillement, tout en poursuivant les autres sources. Le mode manuel `results` permet une vérification supplémentaire. La veille hebdomadaire active les nouveaux PDF financiers pour extraction locale et les nouvelles archives ouvertes reconnues dans les liens du producteur; un format inconnu reste à intégrer après examen.
+Les captures fréquentes de la soirée s’arrêtent dès que la dernière capture annonce explicitement la finalité. Les modes quotidien et hebdomadaire continuent de consulter les résultats pour conserver les corrections que le producteur peut publier après cette annonce. Le mode manuel `results` permet une vérification supplémentaire. Chaque consultation conserve ses horodatages et les captures antérieures. La veille hebdomadaire active les nouveaux PDF financiers pour extraction locale et les nouvelles archives ouvertes reconnues dans les liens du producteur; un format inconnu reste à intégrer après examen.
 
 Le fichier mutable des candidatures doit toujours annoncer l’événement officiel 1126. Un autre événement déclenche une erreur afin d’éviter de l’étiqueter comme un scrutin de 2026. L’année des allocations provinciales est lue dans le titre de la page officielle, consultée le même jour que son JSON.
 

@@ -23,7 +23,12 @@ source_time <- function(x) {
  if (is.na(x) || !nzchar(x)) return(NA_character_)
  v <- suppressWarnings(lubridate::parse_date_time(str_replace_all(x, ',', '.'),
    orders = c('ymd HMSz', 'ymd HMS', 'b d Y IMS p'), tz = 'America/Toronto', quiet = TRUE))
- if (is.na(v)) NA_character_ else format(v, '%Y-%m-%dT%H:%M:%OS3Z', tz = 'UTC')
+ if (is.na(v)) return(NA_character_)
+ # Éviter la troncature variable des fractions binaires par %OS3 selon l'OS.
+ milliseconds <- round(as.numeric(v) * 1000)
+ seconds <- as.POSIXct(milliseconds %/% 1000, origin='1970-01-01', tz='UTC')
+ paste0(format(seconds, '%Y-%m-%dT%H:%M:%S', tz='UTC'),
+        sprintf('.%03dZ', as.integer(milliseconds %% 1000)))
 }
 map_info <- function(eid) {
  date <- str_extract(eid, '\\d{4}-\\d{2}-\\d{2}')

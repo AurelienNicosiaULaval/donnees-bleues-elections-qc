@@ -44,16 +44,9 @@ acquire_all <- function(refresh = FALSE, mode = 'all') {
   new_archives <- selected & !s$source_id %in% load_manifest()$source_id & s$group=='archives' & s$format %in% c('JSON','ZIP')
   selected <- daily | new_documents | new_archives | s$group %in% c('allocations','allocations_json','limits','contributions','pre_election','finance_bilan')
  }
- # Une fois la finalité explicitement annoncée, seules les demandes manuelles
- # ciblées peuvent reprendre le flux de dépouillement; les autres sources continuent.
- idx <- read_meta('data/snapshots/results_2026/index.csv')
- if(mode %in% c('daily','weekly') && nrow(idx)) {
-  last <- idx[order(idx$observed_at,decreasing=TRUE)[1],]
-  if(file.exists(last$raw_file)) {
-   j<-fromJSON(last$raw_file,simplifyVector=FALSE)
-   if(isTRUE(j$statistiques$isResultatsFinaux))selected <- selected & !grepl('/resultats/resultats.json$',s$url)
-  }
- }
+ # Le producteur peut corriger une publication déjà finale. Les collectes
+ # quotidiennes et hebdomadaires continuent donc de consulter les résultats;
+ # seul le rythme intensif de la soirée est arrêté par le planificateur.
  if (mode == 'results') selected <- s$group == 'current' & grepl('/resultats/resultats.json$', s$url)
  for (i in which(selected)) { acquire(s[i, ], refresh); Sys.sleep(0.75) }
 }
