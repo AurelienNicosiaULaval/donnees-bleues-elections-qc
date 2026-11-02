@@ -6640,3 +6640,315 @@ Caused by error in `curl::curl_fetch_disk()`:
 2026-10-26T15:30:06.667Z,2026_map_count,pass,NA,electoral_districts,127 circonscriptions dans la liste officielle
 2026-10-26T15:30:06.668Z,result_status,pass,NA,results_candidate,final uniquement selon source
 2026-10-26T15:30:06.669Z,no_preliminary_elected,pass,NA,results_candidate,aucune élection annoncée sur la base d’un fichier préliminaire
+2026-11-02T18:46:10.325Z,acquisition,warning,src_22fefd6fc574,NA,HTTP 403
+2026-11-02T18:46:11.295Z,acquisition,warning,src_3bbf709ff718,NA,HTTP 403
+2026-11-02T18:46:14.033Z,acquisition,warning,src_fd99c43283f3,NA,HTTP 403
+2026-11-02T18:49:13.571Z,contribution_grain,info,src_54b914419613,NA,"Totaux annuels par personne et entité. Date de l’événement = campagne à la direction, pas date du versement. Aucune agrégation mensuelle construite."
+2026-11-02T18:50:07.869Z,by_elections:timestamp,pass,NA,by_elections,horodatage et capture présents
+2026-11-02T18:50:07.876Z,by_elections:provenance,pass,NA,by_elections,chaque source appartient au catalogue
+2026-11-02T18:50:07.878Z,by_elections:registered,pass,NA,by_elections,comptage entier non négatif
+2026-11-02T18:50:07.879Z,by_elections:valid_ballots,pass,NA,by_elections,comptage entier non négatif
+2026-11-02T18:50:07.880Z,by_elections:rejected_ballots,pass,NA,by_elections,comptage entier non négatif
+2026-11-02T18:50:07.881Z,by_elections:votes_cast,pass,NA,by_elections,comptage entier non négatif
+2026-11-02T18:50:07.882Z,by_elections:polls_counted,pass,NA,by_elections,comptage entier non négatif
+2026-11-02T18:50:07.884Z,by_elections:polls_total,pass,NA,by_elections,comptage entier non négatif
+2026-11-02T18:50:07.894Z,by_elections:ballots,pass,NA,by_elections,0 non-concordances; valides + rejetés = exprimés quand applicable
+2026-11-02T18:50:07.895Z,by_elections:turnout,pass,NA,by_elections,taux recalculé cohérent
+2026-11-02T18:50:07.897Z,candidate_statistics:timestamp,pass,NA,candidate_statistics,horodatage et capture présents
+2026-11-02T18:50:07.903Z,candidate_statistics:provenance,pass,NA,candidate_statistics,chaque source appartient au catalogue
+2026-11-02T18:50:07.905Z,candidates:timestamp,pass,NA,candidates,horodatage et capture présents
+2026-11-02T18:50:07.912Z,candidates:provenance,pass,NA,candidates,chaque source appartient au catalogue
+2026-11-02T18:50:07.919Z,candidates:key,pass,NA,candidates,candidate_id × snapshot_id
+2026-11-02T18:50:07.921Z,candidates_2012:timestamp,pass,NA,candidates_2012,horodatage et capture présents
+2026-11-02T18:50:07.927Z,candidates_2012:provenance,pass,NA,candidates_2012,chaque source appartient au catalogue
+2026-11-02T18:50:07.929Z,candidates_2012:key,pass,NA,candidates_2012,candidate_id × snapshot_id
+2026-11-02T18:50:07.930Z,district_crosswalk_2017_2026:timestamp,pass,NA,district_crosswalk_2017_2026,horodatage et capture présents
+2026-11-02T18:50:07.937Z,district_crosswalk_2017_2026:provenance,pass,NA,district_crosswalk_2017_2026,chaque source appartient au catalogue
+2026-11-02T18:50:07.938Z,district_indicators:timestamp,pass,NA,district_indicators,horodatage et capture présents
+2026-11-02T18:50:07.945Z,district_indicators:provenance,pass,NA,district_indicators,chaque source appartient au catalogue
+2026-11-02T18:50:07.946Z,district_map_changes_spatial:timestamp,pass,NA,district_map_changes_spatial,horodatage et capture présents
+2026-11-02T18:50:07.953Z,district_map_changes_spatial:provenance,pass,NA,district_map_changes_spatial,chaque source appartient au catalogue
+2026-11-02T18:50:07.954Z,election_calendar_2026:timestamp,pass,NA,election_calendar_2026,horodatage et capture présents
+2026-11-02T18:50:07.961Z,election_calendar_2026:provenance,pass,NA,election_calendar_2026,chaque source appartient au catalogue
+2026-11-02T18:50:07.962Z,election_expense_limits:timestamp,pass,NA,election_expense_limits,horodatage et capture présents
+2026-11-02T18:50:07.969Z,election_expense_limits:provenance,pass,NA,election_expense_limits,chaque source appartient au catalogue
+2026-11-02T18:50:07.970Z,elections:timestamp,pass,NA,elections,horodatage et capture présents
+2026-11-02T18:50:07.976Z,elections:provenance,pass,NA,elections,chaque source appartient au catalogue
+2026-11-02T18:50:07.978Z,elections:key,pass,NA,elections,election_id × snapshot_id
+2026-11-02T18:50:07.979Z,elections:registered,pass,NA,elections,comptage entier non négatif
+2026-11-02T18:50:07.980Z,elections:valid_ballots,pass,NA,elections,comptage entier non négatif
+2026-11-02T18:50:07.981Z,elections:rejected_ballots,pass,NA,elections,comptage entier non négatif
+2026-11-02T18:50:07.983Z,elections:votes_cast,pass,NA,elections,comptage entier non négatif
+2026-11-02T18:50:07.984Z,elections:polls_counted,pass,NA,elections,comptage entier non négatif
+2026-11-02T18:50:07.985Z,elections:polls_total,pass,NA,elections,comptage entier non négatif
+2026-11-02T18:50:07.995Z,elections:ballots,pass,NA,elections,0 non-concordances; valides + rejetés = exprimés quand applicable
+2026-11-02T18:50:07.997Z,elections:turnout,pass,NA,elections,taux recalculé cohérent
+2026-11-02T18:50:07.998Z,electoral_district_geometries:timestamp,pass,NA,electoral_district_geometries,horodatage et capture présents
+2026-11-02T18:50:08.004Z,electoral_district_geometries:provenance,pass,NA,electoral_district_geometries,chaque source appartient au catalogue
+2026-11-02T18:50:08.006Z,electoral_districts:timestamp,pass,NA,electoral_districts,horodatage et capture présents
+2026-11-02T18:50:08.012Z,electoral_districts:provenance,pass,NA,electoral_districts,chaque source appartient au catalogue
+2026-11-02T18:50:08.014Z,electoral_districts:key,pass,NA,electoral_districts,district_id × snapshot_id
+2026-11-02T18:50:08.015Z,finance_source_tables:timestamp,pass,NA,finance_source_tables,horodatage et capture présents
+2026-11-02T18:50:08.022Z,finance_source_tables:provenance,pass,NA,finance_source_tables,chaque source appartient au catalogue
+2026-11-02T18:50:08.023Z,financial_document_index:timestamp,pass,NA,financial_document_index,horodatage et capture présents
+2026-11-02T18:50:08.030Z,financial_document_index:provenance,pass,NA,financial_document_index,chaque source appartient au catalogue
+2026-11-02T18:50:08.031Z,historical_candidate_results:timestamp,pass,NA,historical_candidate_results,horodatage et capture présents
+2026-11-02T18:50:08.038Z,historical_candidate_results:provenance,pass,NA,historical_candidate_results,chaque source appartient au catalogue
+2026-11-02T18:50:08.039Z,historical_candidate_results:votes,pass,NA,historical_candidate_results,comptage entier non négatif
+2026-11-02T18:50:08.041Z,historical_district_results:timestamp,pass,NA,historical_district_results,horodatage et capture présents
+2026-11-02T18:50:08.047Z,historical_district_results:provenance,pass,NA,historical_district_results,chaque source appartient au catalogue
+2026-11-02T18:50:08.048Z,historical_district_results:registered,pass,NA,historical_district_results,comptage entier non négatif
+2026-11-02T18:50:08.050Z,historical_district_results:valid_ballots,pass,NA,historical_district_results,comptage entier non négatif
+2026-11-02T18:50:08.051Z,historical_district_results:rejected_ballots,pass,NA,historical_district_results,comptage entier non négatif
+2026-11-02T18:50:08.052Z,historical_district_results:votes_cast,pass,NA,historical_district_results,comptage entier non négatif
+2026-11-02T18:50:08.053Z,historical_district_results:polls_counted,pass,NA,historical_district_results,comptage entier non négatif
+2026-11-02T18:50:08.054Z,historical_district_results:polls_total,pass,NA,historical_district_results,comptage entier non négatif
+2026-11-02T18:50:08.065Z,historical_district_results:ballots,pass,NA,historical_district_results,0 non-concordances; valides + rejetés = exprimés quand applicable
+2026-11-02T18:50:08.076Z,historical_district_results:turnout,pass,NA,historical_district_results,taux recalculé cohérent
+2026-11-02T18:50:08.077Z,historical_party_results:timestamp,pass,NA,historical_party_results,horodatage et capture présents
+2026-11-02T18:50:08.084Z,historical_party_results:provenance,pass,NA,historical_party_results,chaque source appartient au catalogue
+2026-11-02T18:50:08.085Z,historical_party_results:votes,pass,NA,historical_party_results,comptage entier non négatif
+2026-11-02T18:50:08.087Z,historical_turnout:timestamp,pass,NA,historical_turnout,horodatage et capture présents
+2026-11-02T18:50:08.093Z,historical_turnout:provenance,pass,NA,historical_turnout,chaque source appartient au catalogue
+2026-11-02T18:50:08.095Z,historical_turnout:registered,pass,NA,historical_turnout,comptage entier non négatif
+2026-11-02T18:50:08.096Z,historical_turnout:valid_ballots,pass,NA,historical_turnout,comptage entier non négatif
+2026-11-02T18:50:08.097Z,historical_turnout:rejected_ballots,pass,NA,historical_turnout,comptage entier non négatif
+2026-11-02T18:50:08.098Z,historical_turnout:votes_cast,pass,NA,historical_turnout,comptage entier non négatif
+2026-11-02T18:50:08.099Z,historical_turnout:polls_counted,pass,NA,historical_turnout,comptage entier non négatif
+2026-11-02T18:50:08.100Z,historical_turnout:polls_total,pass,NA,historical_turnout,comptage entier non négatif
+2026-11-02T18:50:08.111Z,historical_turnout:ballots,pass,NA,historical_turnout,0 non-concordances; valides + rejetés = exprimés quand applicable
+2026-11-02T18:50:08.112Z,historical_turnout:turnout,pass,NA,historical_turnout,taux recalculé cohérent
+2026-11-02T18:50:08.113Z,parties:timestamp,pass,NA,parties,horodatage et capture présents
+2026-11-02T18:50:08.120Z,parties:provenance,pass,NA,parties,chaque source appartient au catalogue
+2026-11-02T18:50:08.121Z,party_authorization_history:timestamp,pass,NA,party_authorization_history,horodatage et capture présents
+2026-11-02T18:50:08.128Z,party_authorization_history:provenance,pass,NA,party_authorization_history,chaque source appartient au catalogue
+2026-11-02T18:50:08.129Z,party_officials:timestamp,pass,NA,party_officials,horodatage et capture présents
+2026-11-02T18:50:08.136Z,party_officials:provenance,pass,NA,party_officials,chaque source appartient au catalogue
+2026-11-02T18:50:08.137Z,party_public_funding:timestamp,pass,NA,party_public_funding,horodatage et capture présents
+2026-11-02T18:50:08.143Z,party_public_funding:provenance,pass,NA,party_public_funding,chaque source appartient au catalogue
+2026-11-02T18:50:08.145Z,political_contributions_aggregated:timestamp,pass,NA,political_contributions_aggregated,horodatage et capture présents
+2026-11-02T18:50:08.151Z,political_contributions_aggregated:provenance,pass,NA,political_contributions_aggregated,chaque source appartient au catalogue
+2026-11-02T18:50:08.152Z,political_contributions_city:timestamp,pass,NA,political_contributions_city,horodatage et capture présents
+2026-11-02T18:50:08.160Z,political_contributions_city:provenance,pass,NA,political_contributions_city,chaque source appartient au catalogue
+2026-11-02T18:50:08.161Z,polling_candidate_links:timestamp,pass,NA,polling_candidate_links,horodatage et capture présents
+2026-11-02T18:50:08.168Z,polling_candidate_links:provenance,pass,NA,polling_candidate_links,chaque source appartient au catalogue
+2026-11-02T18:50:08.176Z,polling_division_results:timestamp,pass,NA,polling_division_results,horodatage et capture présents
+2026-11-02T18:50:08.293Z,polling_division_results:provenance,pass,NA,polling_division_results,chaque source appartient au catalogue
+2026-11-02T18:50:09.882Z,polling_division_results:key,pass,NA,polling_division_results,polling_unit_id × candidate_id × snapshot_id
+2026-11-02T18:50:09.890Z,polling_division_results:votes,pass,NA,polling_division_results,comptage entier non négatif
+2026-11-02T18:50:09.892Z,polling_summary_fields:timestamp,pass,NA,polling_summary_fields,horodatage et capture présents
+2026-11-02T18:50:09.901Z,polling_summary_fields:provenance,pass,NA,polling_summary_fields,chaque source appartient au catalogue
+2026-11-02T18:50:09.904Z,polling_units:timestamp,pass,NA,polling_units,horodatage et capture présents
+2026-11-02T18:50:09.925Z,polling_units:provenance,pass,NA,polling_units,chaque source appartient au catalogue
+2026-11-02T18:50:10.045Z,polling_units:key,pass,NA,polling_units,polling_unit_id × snapshot_id
+2026-11-02T18:50:10.049Z,polling_units:registered,pass,NA,polling_units,comptage entier non négatif
+2026-11-02T18:50:10.053Z,polling_units:valid_ballots,pass,NA,polling_units,comptage entier non négatif
+2026-11-02T18:50:10.057Z,polling_units:rejected_ballots,pass,NA,polling_units,comptage entier non négatif
+2026-11-02T18:50:10.061Z,polling_units:votes_cast,pass,NA,polling_units,comptage entier non négatif
+2026-11-02T18:50:10.077Z,polling_units:ballots,pass,NA,polling_units,0 non-concordances; valides + rejetés = exprimés quand applicable
+2026-11-02T18:50:10.079Z,registered_electors:timestamp,pass,NA,registered_electors,horodatage et capture présents
+2026-11-02T18:50:10.087Z,registered_electors:provenance,pass,NA,registered_electors,chaque source appartient au catalogue
+2026-11-02T18:50:10.091Z,registered_electors:key,pass,NA,registered_electors,election_id × district_id × snapshot_id
+2026-11-02T18:50:10.096Z,result_source_fields:timestamp,pass,NA,result_source_fields,horodatage et capture présents
+2026-11-02T18:50:10.127Z,result_source_fields:provenance,pass,NA,result_source_fields,chaque source appartient au catalogue
+2026-11-02T18:50:10.130Z,results_candidate:timestamp,pass,NA,results_candidate,horodatage et capture présents
+2026-11-02T18:50:10.140Z,results_candidate:provenance,pass,NA,results_candidate,chaque source appartient au catalogue
+2026-11-02T18:50:10.170Z,results_candidate:key,pass,NA,results_candidate,election_id × district_id × candidate_id × snapshot_id
+2026-11-02T18:50:10.173Z,results_candidate:votes,pass,NA,results_candidate,comptage entier non négatif
+2026-11-02T18:50:10.175Z,results_candidate_2026:timestamp,pass,NA,results_candidate_2026,horodatage et capture présents
+2026-11-02T18:50:10.185Z,results_candidate_2026:provenance,pass,NA,results_candidate_2026,chaque source appartient au catalogue
+2026-11-02T18:50:10.187Z,results_candidate_2026:votes,pass,NA,results_candidate_2026,comptage entier non négatif
+2026-11-02T18:50:10.188Z,results_party:timestamp,pass,NA,results_party,horodatage et capture présents
+2026-11-02T18:50:10.196Z,results_party:provenance,pass,NA,results_party,chaque source appartient au catalogue
+2026-11-02T18:50:10.199Z,results_party:key,pass,NA,results_party,election_id × party_id × snapshot_id
+2026-11-02T18:50:10.201Z,results_party:votes,pass,NA,results_party,comptage entier non négatif
+2026-11-02T18:50:10.202Z,results_party_2026:timestamp,pass,NA,results_party_2026,horodatage et capture présents
+2026-11-02T18:50:10.228Z,results_party_2026:provenance,pass,NA,results_party_2026,chaque source appartient au catalogue
+2026-11-02T18:50:10.229Z,results_party_2026:votes,pass,NA,results_party_2026,comptage entier non négatif
+2026-11-02T18:50:10.231Z,turnout:timestamp,pass,NA,turnout,horodatage et capture présents
+2026-11-02T18:50:10.238Z,turnout:provenance,pass,NA,turnout,chaque source appartient au catalogue
+2026-11-02T18:50:10.241Z,turnout:key,pass,NA,turnout,election_id × district_id × snapshot_id
+2026-11-02T18:50:10.242Z,turnout:registered,pass,NA,turnout,comptage entier non négatif
+2026-11-02T18:50:10.243Z,turnout:valid_ballots,pass,NA,turnout,comptage entier non négatif
+2026-11-02T18:50:10.245Z,turnout:rejected_ballots,pass,NA,turnout,comptage entier non négatif
+2026-11-02T18:50:10.246Z,turnout:votes_cast,pass,NA,turnout,comptage entier non négatif
+2026-11-02T18:50:10.247Z,turnout:polls_counted,pass,NA,turnout,comptage entier non négatif
+2026-11-02T18:50:10.248Z,turnout:polls_total,pass,NA,turnout,comptage entier non négatif
+2026-11-02T18:50:10.259Z,turnout:ballots,pass,NA,turnout,0 non-concordances; valides + rejetés = exprimés quand applicable
+2026-11-02T18:50:10.260Z,turnout:turnout,pass,NA,turnout,taux recalculé cohérent
+2026-11-02T18:50:10.261Z,turnout_history:timestamp,pass,NA,turnout_history,horodatage et capture présents
+2026-11-02T18:50:10.268Z,turnout_history:provenance,pass,NA,turnout_history,chaque source appartient au catalogue
+2026-11-02T18:50:10.270Z,turnout_history:registered,pass,NA,turnout_history,comptage entier non négatif
+2026-11-02T18:50:10.271Z,turnout_history:valid_ballots,pass,NA,turnout_history,comptage entier non négatif
+2026-11-02T18:50:10.272Z,turnout_history:rejected_ballots,pass,NA,turnout_history,comptage entier non négatif
+2026-11-02T18:50:10.273Z,turnout_history:votes_cast,pass,NA,turnout_history,comptage entier non négatif
+2026-11-02T18:50:10.274Z,turnout_history:polls_counted,pass,NA,turnout_history,comptage entier non négatif
+2026-11-02T18:50:10.276Z,turnout_history:polls_total,pass,NA,turnout_history,comptage entier non négatif
+2026-11-02T18:50:10.286Z,turnout_history:ballots,pass,NA,turnout_history,0 non-concordances; valides + rejetés = exprimés quand applicable
+2026-11-02T18:50:10.287Z,turnout_history:turnout,pass,NA,turnout_history,taux recalculé cohérent
+2026-11-02T18:50:10.311Z,candidate_vote_totals,pass,NA,results_candidate,sommes des candidats = bulletins valides finaux
+2026-11-02T18:50:11.164Z,polling_vote_totals,pass,NA,polling_units,0 unités dont les votes ne concordent pas
+2026-11-02T18:50:11.169Z,polling_links,warning,NA,polling_division_results,23189 appariements laissés non résolus
+2026-11-02T18:50:11.175Z,crosswalk_fractions,pass,NA,district_crosswalk_2017_2026,"fractions dans [0,1], tolérance numérique 1e-6"
+2026-11-02T18:50:11.185Z,results_candidate:shares,pass,NA,results_candidate,parts recalculées concordantes
+2026-11-02T18:50:11.191Z,historical_candidate_results:shares,pass,NA,historical_candidate_results,parts recalculées concordantes
+2026-11-02T18:50:11.193Z,calendar_dates,pass,NA,election_calendar_2026,dates de calendrier valides
+2026-11-02T18:50:11.196Z,2026_candidates,pass,NA,candidates,Contrôle de référence daté : 908 au 3 octobre 2026; une rectification ultérieure doit être revue.
+2026-11-02T18:50:11.198Z,2026_candidate_districts,pass,NA,candidates,127 circonscriptions officielles
+2026-11-02T18:50:11.200Z,2026_map_count,pass,NA,electoral_districts,127 circonscriptions dans la liste officielle
+2026-11-02T18:50:11.202Z,result_status,pass,NA,results_candidate,final uniquement selon source
+2026-11-02T18:50:11.203Z,no_preliminary_elected,pass,NA,results_candidate,aucune élection annoncée sur la base d’un fichier préliminaire
+2026-11-02T18:50:25.942Z,by_elections:timestamp,pass,NA,by_elections,horodatage et capture présents
+2026-11-02T18:50:25.952Z,by_elections:provenance,pass,NA,by_elections,chaque source appartient au catalogue
+2026-11-02T18:50:25.953Z,by_elections:registered,pass,NA,by_elections,comptage entier non négatif
+2026-11-02T18:50:25.954Z,by_elections:valid_ballots,pass,NA,by_elections,comptage entier non négatif
+2026-11-02T18:50:25.956Z,by_elections:rejected_ballots,pass,NA,by_elections,comptage entier non négatif
+2026-11-02T18:50:25.957Z,by_elections:votes_cast,pass,NA,by_elections,comptage entier non négatif
+2026-11-02T18:50:25.958Z,by_elections:polls_counted,pass,NA,by_elections,comptage entier non négatif
+2026-11-02T18:50:25.959Z,by_elections:polls_total,pass,NA,by_elections,comptage entier non négatif
+2026-11-02T18:50:25.971Z,by_elections:ballots,pass,NA,by_elections,0 non-concordances; valides + rejetés = exprimés quand applicable
+2026-11-02T18:50:25.972Z,by_elections:turnout,pass,NA,by_elections,taux recalculé cohérent
+2026-11-02T18:50:25.973Z,candidate_statistics:timestamp,pass,NA,candidate_statistics,horodatage et capture présents
+2026-11-02T18:50:25.980Z,candidate_statistics:provenance,pass,NA,candidate_statistics,chaque source appartient au catalogue
+2026-11-02T18:50:25.981Z,candidates:timestamp,pass,NA,candidates,horodatage et capture présents
+2026-11-02T18:50:25.989Z,candidates:provenance,pass,NA,candidates,chaque source appartient au catalogue
+2026-11-02T18:50:25.996Z,candidates:key,pass,NA,candidates,candidate_id × snapshot_id
+2026-11-02T18:50:25.998Z,candidates_2012:timestamp,pass,NA,candidates_2012,horodatage et capture présents
+2026-11-02T18:50:26.004Z,candidates_2012:provenance,pass,NA,candidates_2012,chaque source appartient au catalogue
+2026-11-02T18:50:26.006Z,candidates_2012:key,pass,NA,candidates_2012,candidate_id × snapshot_id
+2026-11-02T18:50:26.008Z,district_crosswalk_2017_2026:timestamp,pass,NA,district_crosswalk_2017_2026,horodatage et capture présents
+2026-11-02T18:50:26.014Z,district_crosswalk_2017_2026:provenance,pass,NA,district_crosswalk_2017_2026,chaque source appartient au catalogue
+2026-11-02T18:50:26.015Z,district_indicators:timestamp,pass,NA,district_indicators,horodatage et capture présents
+2026-11-02T18:50:26.022Z,district_indicators:provenance,pass,NA,district_indicators,chaque source appartient au catalogue
+2026-11-02T18:50:26.023Z,district_map_changes_spatial:timestamp,pass,NA,district_map_changes_spatial,horodatage et capture présents
+2026-11-02T18:50:26.030Z,district_map_changes_spatial:provenance,pass,NA,district_map_changes_spatial,chaque source appartient au catalogue
+2026-11-02T18:50:26.031Z,election_calendar_2026:timestamp,pass,NA,election_calendar_2026,horodatage et capture présents
+2026-11-02T18:50:26.037Z,election_calendar_2026:provenance,pass,NA,election_calendar_2026,chaque source appartient au catalogue
+2026-11-02T18:50:26.038Z,election_expense_limits:timestamp,pass,NA,election_expense_limits,horodatage et capture présents
+2026-11-02T18:50:26.045Z,election_expense_limits:provenance,pass,NA,election_expense_limits,chaque source appartient au catalogue
+2026-11-02T18:50:26.046Z,elections:timestamp,pass,NA,elections,horodatage et capture présents
+2026-11-02T18:50:26.052Z,elections:provenance,pass,NA,elections,chaque source appartient au catalogue
+2026-11-02T18:50:26.054Z,elections:key,pass,NA,elections,election_id × snapshot_id
+2026-11-02T18:50:26.055Z,elections:registered,pass,NA,elections,comptage entier non négatif
+2026-11-02T18:50:26.056Z,elections:valid_ballots,pass,NA,elections,comptage entier non négatif
+2026-11-02T18:50:26.057Z,elections:rejected_ballots,pass,NA,elections,comptage entier non négatif
+2026-11-02T18:50:26.059Z,elections:votes_cast,pass,NA,elections,comptage entier non négatif
+2026-11-02T18:50:26.060Z,elections:polls_counted,pass,NA,elections,comptage entier non négatif
+2026-11-02T18:50:26.061Z,elections:polls_total,pass,NA,elections,comptage entier non négatif
+2026-11-02T18:50:26.071Z,elections:ballots,pass,NA,elections,0 non-concordances; valides + rejetés = exprimés quand applicable
+2026-11-02T18:50:26.072Z,elections:turnout,pass,NA,elections,taux recalculé cohérent
+2026-11-02T18:50:26.073Z,electoral_district_geometries:timestamp,pass,NA,electoral_district_geometries,horodatage et capture présents
+2026-11-02T18:50:26.080Z,electoral_district_geometries:provenance,pass,NA,electoral_district_geometries,chaque source appartient au catalogue
+2026-11-02T18:50:26.081Z,electoral_districts:timestamp,pass,NA,electoral_districts,horodatage et capture présents
+2026-11-02T18:50:26.087Z,electoral_districts:provenance,pass,NA,electoral_districts,chaque source appartient au catalogue
+2026-11-02T18:50:26.089Z,electoral_districts:key,pass,NA,electoral_districts,district_id × snapshot_id
+2026-11-02T18:50:26.090Z,finance_source_tables:timestamp,pass,NA,finance_source_tables,horodatage et capture présents
+2026-11-02T18:50:26.105Z,finance_source_tables:provenance,pass,NA,finance_source_tables,chaque source appartient au catalogue
+2026-11-02T18:50:26.106Z,financial_document_index:timestamp,pass,NA,financial_document_index,horodatage et capture présents
+2026-11-02T18:50:26.113Z,financial_document_index:provenance,pass,NA,financial_document_index,chaque source appartient au catalogue
+2026-11-02T18:50:26.114Z,historical_candidate_results:timestamp,pass,NA,historical_candidate_results,horodatage et capture présents
+2026-11-02T18:50:26.121Z,historical_candidate_results:provenance,pass,NA,historical_candidate_results,chaque source appartient au catalogue
+2026-11-02T18:50:26.122Z,historical_candidate_results:votes,pass,NA,historical_candidate_results,comptage entier non négatif
+2026-11-02T18:50:26.123Z,historical_district_results:timestamp,pass,NA,historical_district_results,horodatage et capture présents
+2026-11-02T18:50:26.130Z,historical_district_results:provenance,pass,NA,historical_district_results,chaque source appartient au catalogue
+2026-11-02T18:50:26.131Z,historical_district_results:registered,pass,NA,historical_district_results,comptage entier non négatif
+2026-11-02T18:50:26.132Z,historical_district_results:valid_ballots,pass,NA,historical_district_results,comptage entier non négatif
+2026-11-02T18:50:26.133Z,historical_district_results:rejected_ballots,pass,NA,historical_district_results,comptage entier non négatif
+2026-11-02T18:50:26.135Z,historical_district_results:votes_cast,pass,NA,historical_district_results,comptage entier non négatif
+2026-11-02T18:50:26.136Z,historical_district_results:polls_counted,pass,NA,historical_district_results,comptage entier non négatif
+2026-11-02T18:50:26.137Z,historical_district_results:polls_total,pass,NA,historical_district_results,comptage entier non négatif
+2026-11-02T18:50:26.147Z,historical_district_results:ballots,pass,NA,historical_district_results,0 non-concordances; valides + rejetés = exprimés quand applicable
+2026-11-02T18:50:26.148Z,historical_district_results:turnout,pass,NA,historical_district_results,taux recalculé cohérent
+2026-11-02T18:50:26.150Z,historical_party_results:timestamp,pass,NA,historical_party_results,horodatage et capture présents
+2026-11-02T18:50:26.156Z,historical_party_results:provenance,pass,NA,historical_party_results,chaque source appartient au catalogue
+2026-11-02T18:50:26.157Z,historical_party_results:votes,pass,NA,historical_party_results,comptage entier non négatif
+2026-11-02T18:50:26.159Z,historical_turnout:timestamp,pass,NA,historical_turnout,horodatage et capture présents
+2026-11-02T18:50:26.165Z,historical_turnout:provenance,pass,NA,historical_turnout,chaque source appartient au catalogue
+2026-11-02T18:50:26.166Z,historical_turnout:registered,pass,NA,historical_turnout,comptage entier non négatif
+2026-11-02T18:50:26.167Z,historical_turnout:valid_ballots,pass,NA,historical_turnout,comptage entier non négatif
+2026-11-02T18:50:26.169Z,historical_turnout:rejected_ballots,pass,NA,historical_turnout,comptage entier non négatif
+2026-11-02T18:50:26.170Z,historical_turnout:votes_cast,pass,NA,historical_turnout,comptage entier non négatif
+2026-11-02T18:50:26.171Z,historical_turnout:polls_counted,pass,NA,historical_turnout,comptage entier non négatif
+2026-11-02T18:50:26.172Z,historical_turnout:polls_total,pass,NA,historical_turnout,comptage entier non négatif
+2026-11-02T18:50:26.182Z,historical_turnout:ballots,pass,NA,historical_turnout,0 non-concordances; valides + rejetés = exprimés quand applicable
+2026-11-02T18:50:26.184Z,historical_turnout:turnout,pass,NA,historical_turnout,taux recalculé cohérent
+2026-11-02T18:50:26.185Z,parties:timestamp,pass,NA,parties,horodatage et capture présents
+2026-11-02T18:50:26.191Z,parties:provenance,pass,NA,parties,chaque source appartient au catalogue
+2026-11-02T18:50:26.193Z,party_authorization_history:timestamp,pass,NA,party_authorization_history,horodatage et capture présents
+2026-11-02T18:50:26.199Z,party_authorization_history:provenance,pass,NA,party_authorization_history,chaque source appartient au catalogue
+2026-11-02T18:50:26.200Z,party_officials:timestamp,pass,NA,party_officials,horodatage et capture présents
+2026-11-02T18:50:26.207Z,party_officials:provenance,pass,NA,party_officials,chaque source appartient au catalogue
+2026-11-02T18:50:26.208Z,party_public_funding:timestamp,pass,NA,party_public_funding,horodatage et capture présents
+2026-11-02T18:50:26.215Z,party_public_funding:provenance,pass,NA,party_public_funding,chaque source appartient au catalogue
+2026-11-02T18:50:26.216Z,political_contributions_aggregated:timestamp,pass,NA,political_contributions_aggregated,horodatage et capture présents
+2026-11-02T18:50:26.223Z,political_contributions_aggregated:provenance,pass,NA,political_contributions_aggregated,chaque source appartient au catalogue
+2026-11-02T18:50:26.224Z,political_contributions_city:timestamp,pass,NA,political_contributions_city,horodatage et capture présents
+2026-11-02T18:50:26.232Z,political_contributions_city:provenance,pass,NA,political_contributions_city,chaque source appartient au catalogue
+2026-11-02T18:50:26.233Z,polling_candidate_links:timestamp,pass,NA,polling_candidate_links,horodatage et capture présents
+2026-11-02T18:50:26.240Z,polling_candidate_links:provenance,pass,NA,polling_candidate_links,chaque source appartient au catalogue
+2026-11-02T18:50:26.248Z,polling_division_results:timestamp,pass,NA,polling_division_results,horodatage et capture présents
+2026-11-02T18:50:26.359Z,polling_division_results:provenance,pass,NA,polling_division_results,chaque source appartient au catalogue
+2026-11-02T18:50:27.747Z,polling_division_results:key,pass,NA,polling_division_results,polling_unit_id × candidate_id × snapshot_id
+2026-11-02T18:50:27.765Z,polling_division_results:votes,pass,NA,polling_division_results,comptage entier non négatif
+2026-11-02T18:50:27.767Z,polling_summary_fields:timestamp,pass,NA,polling_summary_fields,horodatage et capture présents
+2026-11-02T18:50:27.779Z,polling_summary_fields:provenance,pass,NA,polling_summary_fields,chaque source appartient au catalogue
+2026-11-02T18:50:27.783Z,polling_units:timestamp,pass,NA,polling_units,horodatage et capture présents
+2026-11-02T18:50:27.807Z,polling_units:provenance,pass,NA,polling_units,chaque source appartient au catalogue
+2026-11-02T18:50:27.944Z,polling_units:key,pass,NA,polling_units,polling_unit_id × snapshot_id
+2026-11-02T18:50:27.947Z,polling_units:registered,pass,NA,polling_units,comptage entier non négatif
+2026-11-02T18:50:27.949Z,polling_units:valid_ballots,pass,NA,polling_units,comptage entier non négatif
+2026-11-02T18:50:27.951Z,polling_units:rejected_ballots,pass,NA,polling_units,comptage entier non négatif
+2026-11-02T18:50:27.953Z,polling_units:votes_cast,pass,NA,polling_units,comptage entier non négatif
+2026-11-02T18:50:27.965Z,polling_units:ballots,pass,NA,polling_units,0 non-concordances; valides + rejetés = exprimés quand applicable
+2026-11-02T18:50:27.967Z,registered_electors:timestamp,pass,NA,registered_electors,horodatage et capture présents
+2026-11-02T18:50:27.974Z,registered_electors:provenance,pass,NA,registered_electors,chaque source appartient au catalogue
+2026-11-02T18:50:27.976Z,registered_electors:key,pass,NA,registered_electors,election_id × district_id × snapshot_id
+2026-11-02T18:50:27.979Z,result_source_fields:timestamp,pass,NA,result_source_fields,horodatage et capture présents
+2026-11-02T18:50:28.003Z,result_source_fields:provenance,pass,NA,result_source_fields,chaque source appartient au catalogue
+2026-11-02T18:50:28.005Z,results_candidate:timestamp,pass,NA,results_candidate,horodatage et capture présents
+2026-11-02T18:50:28.013Z,results_candidate:provenance,pass,NA,results_candidate,chaque source appartient au catalogue
+2026-11-02T18:50:28.033Z,results_candidate:key,pass,NA,results_candidate,election_id × district_id × candidate_id × snapshot_id
+2026-11-02T18:50:28.035Z,results_candidate:votes,pass,NA,results_candidate,comptage entier non négatif
+2026-11-02T18:50:28.037Z,results_candidate_2026:timestamp,pass,NA,results_candidate_2026,horodatage et capture présents
+2026-11-02T18:50:28.045Z,results_candidate_2026:provenance,pass,NA,results_candidate_2026,chaque source appartient au catalogue
+2026-11-02T18:50:28.047Z,results_candidate_2026:votes,pass,NA,results_candidate_2026,comptage entier non négatif
+2026-11-02T18:50:28.048Z,results_party:timestamp,pass,NA,results_party,horodatage et capture présents
+2026-11-02T18:50:28.055Z,results_party:provenance,pass,NA,results_party,chaque source appartient au catalogue
+2026-11-02T18:50:28.057Z,results_party:key,pass,NA,results_party,election_id × party_id × snapshot_id
+2026-11-02T18:50:28.059Z,results_party:votes,pass,NA,results_party,comptage entier non négatif
+2026-11-02T18:50:28.060Z,results_party_2026:timestamp,pass,NA,results_party_2026,horodatage et capture présents
+2026-11-02T18:50:28.067Z,results_party_2026:provenance,pass,NA,results_party_2026,chaque source appartient au catalogue
+2026-11-02T18:50:28.068Z,results_party_2026:votes,pass,NA,results_party_2026,comptage entier non négatif
+2026-11-02T18:50:28.069Z,turnout:timestamp,pass,NA,turnout,horodatage et capture présents
+2026-11-02T18:50:28.076Z,turnout:provenance,pass,NA,turnout,chaque source appartient au catalogue
+2026-11-02T18:50:28.080Z,turnout:key,pass,NA,turnout,election_id × district_id × snapshot_id
+2026-11-02T18:50:28.081Z,turnout:registered,pass,NA,turnout,comptage entier non négatif
+2026-11-02T18:50:28.083Z,turnout:valid_ballots,pass,NA,turnout,comptage entier non négatif
+2026-11-02T18:50:28.084Z,turnout:rejected_ballots,pass,NA,turnout,comptage entier non négatif
+2026-11-02T18:50:28.085Z,turnout:votes_cast,pass,NA,turnout,comptage entier non négatif
+2026-11-02T18:50:28.086Z,turnout:polls_counted,pass,NA,turnout,comptage entier non négatif
+2026-11-02T18:50:28.088Z,turnout:polls_total,pass,NA,turnout,comptage entier non négatif
+2026-11-02T18:50:28.098Z,turnout:ballots,pass,NA,turnout,0 non-concordances; valides + rejetés = exprimés quand applicable
+2026-11-02T18:50:28.099Z,turnout:turnout,pass,NA,turnout,taux recalculé cohérent
+2026-11-02T18:50:28.101Z,turnout_history:timestamp,pass,NA,turnout_history,horodatage et capture présents
+2026-11-02T18:50:28.107Z,turnout_history:provenance,pass,NA,turnout_history,chaque source appartient au catalogue
+2026-11-02T18:50:28.109Z,turnout_history:registered,pass,NA,turnout_history,comptage entier non négatif
+2026-11-02T18:50:28.110Z,turnout_history:valid_ballots,pass,NA,turnout_history,comptage entier non négatif
+2026-11-02T18:50:28.111Z,turnout_history:rejected_ballots,pass,NA,turnout_history,comptage entier non négatif
+2026-11-02T18:50:28.113Z,turnout_history:votes_cast,pass,NA,turnout_history,comptage entier non négatif
+2026-11-02T18:50:28.114Z,turnout_history:polls_counted,pass,NA,turnout_history,comptage entier non négatif
+2026-11-02T18:50:28.115Z,turnout_history:polls_total,pass,NA,turnout_history,comptage entier non négatif
+2026-11-02T18:50:28.125Z,turnout_history:ballots,pass,NA,turnout_history,0 non-concordances; valides + rejetés = exprimés quand applicable
+2026-11-02T18:50:28.126Z,turnout_history:turnout,pass,NA,turnout_history,taux recalculé cohérent
+2026-11-02T18:50:28.157Z,candidate_vote_totals,pass,NA,results_candidate,sommes des candidats = bulletins valides finaux
+2026-11-02T18:50:29.058Z,polling_vote_totals,pass,NA,polling_units,0 unités dont les votes ne concordent pas
+2026-11-02T18:50:29.062Z,polling_links,warning,NA,polling_division_results,23189 appariements laissés non résolus
+2026-11-02T18:50:29.066Z,crosswalk_fractions,pass,NA,district_crosswalk_2017_2026,"fractions dans [0,1], tolérance numérique 1e-6"
+2026-11-02T18:50:29.080Z,results_candidate:shares,pass,NA,results_candidate,parts recalculées concordantes
+2026-11-02T18:50:29.087Z,historical_candidate_results:shares,pass,NA,historical_candidate_results,parts recalculées concordantes
+2026-11-02T18:50:29.088Z,calendar_dates,pass,NA,election_calendar_2026,dates de calendrier valides
+2026-11-02T18:50:29.092Z,2026_candidates,pass,NA,candidates,Contrôle de référence daté : 908 au 3 octobre 2026; une rectification ultérieure doit être revue.
+2026-11-02T18:50:29.093Z,2026_candidate_districts,pass,NA,candidates,127 circonscriptions officielles
+2026-11-02T18:50:29.096Z,2026_map_count,pass,NA,electoral_districts,127 circonscriptions dans la liste officielle
+2026-11-02T18:50:29.098Z,result_status,pass,NA,results_candidate,final uniquement selon source
+2026-11-02T18:50:29.099Z,no_preliminary_elected,pass,NA,results_candidate,aucune élection annoncée sur la base d’un fichier préliminaire

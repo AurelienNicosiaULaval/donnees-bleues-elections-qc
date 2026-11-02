@@ -2,7 +2,7 @@
 
 Dépôt autonome consacré aux données électorales officielles du Québec. La première version suit l’élection générale du 5 octobre 2026 et prépare l’archivage des résultats. Elle comprend des archives électorales, des résultats par bureau, les cartes, le financement et des compilations démographiques.
 
-État documentaire initial : 3 octobre 2026. Inventaire actuel : 737 sources identifiées, 544 sources récupérées. 29 tables publiques et 26 tables locales produites. Les captures et mises à jour peuvent faire évoluer ces nombres.
+État documentaire initial : 3 octobre 2026. Inventaire actuel : 746 sources identifiées, 546 sources récupérées. 29 tables publiques et 26 tables locales produites. Les captures et mises à jour peuvent faire évoluer ces nombres.
 
 ## Sources et droits
 
@@ -36,17 +36,17 @@ Une ligne de table peut représenter une observation à une capture donnée. Uti
 | `historical_district_results` | élection historique × circonscription | voir catalogue des tables | Élections Québec; voir provenance | CSV UTF-8 | acquisition réussie | 525 | [fichier](data/processed/historical_district_results.csv) |
 | `historical_party_results` | élection historique × parti | voir catalogue des tables | Élections Québec; voir provenance | CSV UTF-8 | acquisition réussie | 241 | [fichier](data/processed/historical_party_results.csv) |
 | `historical_turnout` | élection historique × circonscription | voir catalogue des tables | Élections Québec; voir provenance | CSV UTF-8 | acquisition réussie | 525 | [fichier](data/processed/historical_turnout.csv) |
-| `parties` | parti au registre × capture | voir source | Élections Québec; voir provenance | CSV UTF-8 | acquisition réussie | 260 | [fichier](data/processed/parties.csv) |
-| `party_authorization_history` | autorisation officielle documentée × capture | voir source | Élections Québec; voir provenance | CSV UTF-8 | acquisition réussie | 260 | [fichier](data/processed/party_authorization_history.csv) |
-| `party_officials` | parti × fonction publique × capture | voir source | Élections Québec; voir provenance | CSV UTF-8 | acquisition réussie | 775 | [fichier](data/processed/party_officials.csv) |
+| `parties` | parti au registre × capture | voir source | Élections Québec; voir provenance | CSV UTF-8 | acquisition réussie | 280 | [fichier](data/processed/parties.csv) |
+| `party_authorization_history` | autorisation officielle documentée × capture | voir source | Élections Québec; voir provenance | CSV UTF-8 | acquisition réussie | 280 | [fichier](data/processed/party_authorization_history.csv) |
+| `party_officials` | parti × fonction publique × capture | voir source | Élections Québec; voir provenance | CSV UTF-8 | acquisition réussie | 835 | [fichier](data/processed/party_officials.csv) |
 | `party_public_funding` | parti × année | voir source | Élections Québec; voir provenance | CSV UTF-8 | acquisition réussie | 17 | reconstruction locale |
-| `political_contributions_aggregated` | type et entité × événement × année | voir source | Élections Québec; voir provenance | CSV UTF-8 | acquisition réussie | 216 | reconstruction locale |
-| `political_contributions_city` | type et entité × événement × année × ville | voir source | Élections Québec; voir provenance | CSV UTF-8 | acquisition réussie | 6239 | reconstruction locale |
-| `polling_candidate_links` | en-tête de candidature publié × circonscription × élection | voir catalogue des tables | Élections Québec; voir provenance | CSV UTF-8 | acquisition réussie | 3709 | [fichier](data/processed/polling_candidate_links.csv) |
-| `polling_division_results` | élection × circonscription × unité publiée × candidature | voir catalogue des tables | Élections Québec; voir provenance | CSV UTF-8 gzip | acquisition réussie | 651327 | [fichier](data/processed/polling_division_results.csv.gz) |
-| `polling_summary_fields` | fichier × ligne de total × champ source | voir catalogue des tables | Élections Québec; voir provenance | CSV UTF-8 | acquisition réussie | 14808 | [fichier](data/processed/polling_summary_fields.csv) |
-| `polling_units` | élection × circonscription × unité publiée | voir catalogue des tables | Élections Québec; voir provenance | CSV UTF-8 | acquisition réussie | 91023 | [fichier](data/processed/polling_units.csv) |
-| `registered_electors` | élection × circonscription × capture | qc-prov-2026-10-05-general | Élections Québec; voir provenance | CSV UTF-8 | acquisition réussie | 1651 | [fichier](data/processed/registered_electors.csv) |
+| `political_contributions_aggregated` | type et entité × événement × année | voir source | Élections Québec; voir provenance | CSV UTF-8 | acquisition réussie | 218 | reconstruction locale |
+| `political_contributions_city` | type et entité × événement × année × ville | voir source | Élections Québec; voir provenance | CSV UTF-8 | acquisition réussie | 6265 | reconstruction locale |
+| `polling_candidate_links` | en-tête de candidature publié × circonscription × élection | voir catalogue des tables | Élections Québec; voir provenance | CSV UTF-8 | acquisition réussie | 4617 | [fichier](data/processed/polling_candidate_links.csv) |
+| `polling_division_results` | élection × circonscription × unité publiée × candidature | voir catalogue des tables | Élections Québec; voir provenance | CSV UTF-8 gzip | acquisition réussie | 802314 | [fichier](data/processed/polling_division_results.csv.gz) |
+| `polling_summary_fields` | fichier × ligne de total × champ source | voir catalogue des tables | Élections Québec; voir provenance | CSV UTF-8 | acquisition réussie | 19672 | [fichier](data/processed/polling_summary_fields.csv) |
+| `polling_units` | élection × circonscription × unité publiée | voir catalogue des tables | Élections Québec; voir provenance | CSV UTF-8 gzip | acquisition réussie | 112120 | [fichier](data/processed/polling_units.csv.gz) |
+| `registered_electors` | élection × circonscription × capture | qc-prov-2026-10-05-general | Élections Québec; voir provenance | CSV UTF-8 | acquisition réussie | 1778 | [fichier](data/processed/registered_electors.csv) |
 | `result_source_fields` | capture × entité × champ source | voir catalogue des tables | Élections Québec; voir provenance | CSV UTF-8 gzip | acquisition réussie | 156989 | [fichier](data/processed/result_source_fields.csv.gz) |
 | `results_candidate` | élection × circonscription × candidature × capture | voir catalogue des tables | Élections Québec; voir provenance | CSV UTF-8 | acquisition réussie | 16461 | [fichier](data/processed/results_candidate.csv) |
 | `results_candidate_2026` | candidature 2026 × capture | qc-prov-2026-10-05-general | Élections Québec; voir provenance | CSV UTF-8 | acquisition réussie | 12712 | [fichier](data/processed/results_candidate_2026.csv) |
